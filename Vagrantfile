@@ -4,9 +4,9 @@
 Vagrant.configure("2") do |config|
 
   #https://vagrantcloud.com/search.
-  #BOX_IMAGE 		= "ubuntu/jammy64"
-  BOX_IMAGE 		= "bento/ubuntu-24.04"
-  BOX_VERSION		= "202407.23.0"
+  BOX_IMAGE 		= "ubuntu/jammy64"
+  # BOX_IMAGE 		= "bento/ubuntu-24.04"
+  # BOX_VERSION		= "202407.23.0"
   VM_NAME       	= "docker"
   BOX_CHK_UPDATE 	= false
   SSH_INSERT_KEY 	= false
@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.box = BOX_IMAGE
-  config.vm.box_version = BOX_VERSION
+  # config.vm.box_version = BOX_VERSION
   config.vm.hostname = VM_NAME
   config.vm.provider "virtualbox" do |vb|
     vb.name = VM_NAME
